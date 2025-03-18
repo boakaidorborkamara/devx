@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #101828;
+  --secondary-color: #f7f0ff;
+  --accent-color: #60269e;
+  --muted-color: gray;
+  --hero-text: 3em;
+  --header-text: 2em;
+  --header-text-margin: 15px 0px 50px 0px;
+  --margin-between-paragraph: 15px 0px 15px 0px;
+}
+
+/* ||GENERAL  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+}
+
+p {
+  color: var(--muted-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  border-radius: 10px;
+}
+
+span {
+  color: var(--accent-color);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.active-button {
+  background: var(--accent-color);
+  color: white;
+}
+
+.active-button:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+/*|| NAV BAR  */
+nav {
+  display: flex;
+  background-color: var(--secondary-color);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px 20px 80px;
+}
+
+#nav-menu {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+
+#hamburger-icon {
+  display: none;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* || HERO SECTION  */
+#hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 70vh;
+}
+
+#hero-section small {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#hero-section h1 {
+  font-size: var(--hero-text);
+  font-weight: bolder;
+  margin: var(--header-text-margin);
+}
+
+#hero-section button {
+  margin-top: 55px;
+}
+
+/* || ACHIEVEMENT SECTION  */
+#achevements-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-color);
+  height: 40vh;
+}
+
+#achevements-section > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+#achevements-section h2 {
+  font-size: var(--header-text);
+  margin: var(--header-text-margin);
+}
+
+.achevements {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.achevements h5 {
+  font-size: 1.5em;
+  margin-button: 25px;
+}
+
+.achevements small {
+  color: var(--accent-color);
+}
+
+/* || OUR STORY SECTION  */
+#our-story {
+  display: flex;
+  justify-content: center;
+  align-items: cener;
+  padding: 200px;
+  border-bottom: 1px solid gray;
+}
+
+#our-story div {
+  padding: 0px 100px 0px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#our-story div:nth-child(2) {
+  font-weight: bold;
+}
+
+#our-story div > p {
+  margin: 0px 0px 15px 0px;
+}
+
+#our-story img {
+  border-radius: 15px;
+}
+
+#our-story h2 {
+  font-size: var(--header-text);
+  margin: var(--header-text-margin);
+}
+
+/* || WHAT SETS YOU ASIDE SECTION  */
+#set-you-aside-section {
+  padding: 200px 300px 200px 300px;
+  text-align: center;
+  display: none;
+}
+
+#set-you-aside-section h2 {
+  font-size: var(--header-text);
+  margin: var(--header-text-margin);
+}
+
+#set-you-aside-section div article {
+  background: var(--secondary-color);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+#article-icon {
+  margin: var(--margin-between-paragraph);
+}
+
+#article-header {
+  margin: var(--margin-between-paragraph);
+}
+
+/* || THRIVING COMMUNITY SECTION  */
+#thriving-community-section {
+  background: var(--secondary-color);
+  padding: 200px 300px 200px 300px;
+  display: flex;
+}
+
+#community-section-container {
+  padding: 0px 100px 0px 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#community-section-container h3 {
+  font-size: var(--header-text);
+  margin: var(--header-text-margin);
+}
+
+#community-section-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-image {
+  width: 100%;
+  height: 70%;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+#decorator1 {
+  width: 85px;
+  position: absolute;
+  top: 240px;
+  right: 200px;
+}
+
+#decorator2 {
+  width: 85px;
+  position: absolute;
+  top: 10px;
+  left: 200px;
+}
+
+/* ||small screens  */
+@media (max-width: 768px) {
+  nav {
+    position: absolute;
+    width: 100vw;
+  }
+
+  #nav-menu,
+  #nav-cta {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+    font-size: 4em;
+    width: 200px;
+  }
+
+  #hamburger-icon:hover {
+    cursor: pointer;
+  }
+
+  #hamburger-menu {
+    padding: 200px;
+    display: block;
+    width: 100%;
+    background: red;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+    height: 100vh;
+  }
+}
