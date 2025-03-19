@@ -13,12 +13,14 @@ hamburger_button.addEventListener("click", () => {
 
 // show hamburger menu
 function openHamburgerMenu() {
+  console.log("opning...");
   hamburger_menu.style.display = "";
   isMenuOpen = true;
 }
 
 // hide hamburger menu
 function closeHamburgerMenu() {
+  console.log("closing...");
   hamburger_menu.style.display = "none";
   isMenuOpen = false;
 }
