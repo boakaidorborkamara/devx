@@ -55,6 +55,9 @@ button:hover {
 }
 
 /*|| NAV BAR  */
+header {
+  background: red;
+}
 nav {
   display: flex;
   background-color: var(--secondary-color);
@@ -83,7 +86,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height: 70vh;
+  padding: 150px 70px 150px 70px;
 }
 
 #hero-section small {
@@ -109,7 +112,7 @@ nav {
   justify-content: center;
   align-items: center;
   background: var(--secondary-color);
-  height: 40vh;
+  padding: 120px 70px 120px 70px;
 }
 
 #achevements-section > div {
@@ -246,10 +249,11 @@ nav {
   left: 200px;
 }
 
-/* ||small screens  */
+/* ||TABLETS  */
 @media (max-width: 768px) {
+  /* ||Navigation  */
   nav {
-    position: absolute;
+    position: relative;
     width: 100vw;
   }
 
@@ -277,5 +281,72 @@ nav {
     top: 10px;
     z-index: 1;
     height: 100vh;
+    overflow: hidden;
+    display: none;
+  }
+
+  /* ||ACHIEVEMENT  */
+  #achevements-section {
+    padding: 70px;
+    text-align: center;
+  }
+
+  #achevements-section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .achevements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  /* ||our story  */
+  #our-story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+  }
+
+  #our-story div {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #our-story img {
+    width: 100%;
+  }
+
+  /* ||thriving  */
+  #thriving-community-section {
+    background: var(--secondary-color);
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #community-section-container {
+    /* padding: 0px 100px 0px 100px; */
+    /* display: flex; */
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #community-section-container h3 {
+    font-size: var(--header-text);
+    margin: var(--header-text-margin);
   }
 }
