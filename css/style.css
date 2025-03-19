@@ -55,9 +55,7 @@ button:hover {
 }
 
 /*|| NAV BAR  */
-header {
-  background: red;
-}
+
 nav {
   display: flex;
   background-color: var(--secondary-color);
@@ -179,7 +177,6 @@ nav {
 #set-you-aside-section {
   padding: 200px 300px 200px 300px;
   text-align: center;
-  display: none;
 }
 
 #set-you-aside-section h2 {
@@ -210,6 +207,7 @@ nav {
 
 #community-section-container {
   padding: 0px 100px 0px 100px;
+  /* background: red; */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -249,12 +247,163 @@ nav {
   left: 200px;
 }
 
-/* ||TABLETS  */
-@media (max-width: 768px) {
+/* ||TABLETS to larger phone screen  */
+@media screen and (min-width: 425px) and (max-width: 768px) {
   /* ||Navigation  */
   nav {
     position: relative;
+  }
+
+  #nav-menu,
+  #nav-cta {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+    font-size: 4em;
+    width: 200px;
+  }
+
+  #hamburger-icon:hover {
+    cursor: pointer;
+  }
+
+  #hamburger-menu {
+    padding: 50px;
+    display: block;
     width: 100vw;
+    position: absolute;
+    top: 80px;
+    right: 5px;
+    z-index: 1;
+    height: 100vh;
+    overflow: hidden;
+    background: white;
+    /* display: none; */
+  }
+
+  #hamburger-menu ul {
+    width: 100%;
+    background: yellow;
+    padding: 0px;
+  }
+
+  #hamburger-menu ul li {
+    background: white;
+    list-style-type: none;
+    text-align: center;
+    /* margin: 15px; */
+    padding: 10px;
+  }
+
+  #hamburger-menu ul li:hover {
+    background: var(--accent-color);
+  }
+
+  #hamburger-menu button {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* ||ACHIEVEMENT  */
+  #achevements-section {
+    padding: 70px;
+    text-align: center;
+  }
+
+  #achevements-section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .achevements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  /* ||our story  */
+  #our-story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px 100px 50px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+  }
+
+  #our-story div {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #our-story img {
+    width: 100%;
+  }
+
+  /* || WHAT SETS YOU ASIDE SECTION  */
+  #set-you-aside-section {
+    padding: 200px 100px 200px 100px;
+    text-align: center;
+  }
+
+  #set-you-aside-section h2 {
+    font-size: var(--header-text);
+    margin: var(--header-text-margin);
+  }
+
+  #set-you-aside-section div article {
+    background: var(--secondary-color);
+    padding: 30px;
+    border-radius: 15px;
+  }
+
+  #article-icon {
+    margin: var(--margin-between-paragraph);
+  }
+
+  #article-header {
+    margin: var(--margin-between-paragraph);
+  }
+
+  /* ||thriving  */
+  #thriving-community-section {
+    background: var(--secondary-color);
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #main-image {
+    margin-top: 30px;
+  }
+
+  #community-section-container {
+    padding: 0px 5px 0px 5px;
+  }
+
+  #community-section-container h3 {
+    font-size: var(--header-text);
+    margin: var(--header-text-margin);
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 424px) {
+  /* ||Navigation  */
+  nav {
+    position: relative;
   }
 
   #nav-menu,
@@ -276,7 +425,6 @@ nav {
     padding: 200px;
     display: block;
     width: 100%;
-    background: red;
     position: absolute;
     top: 10px;
     z-index: 1;
@@ -313,7 +461,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px;
+    padding: 100px 50px 100px 50px;
     border-bottom: 1px solid gray;
     text-align: center;
   }
@@ -329,20 +477,46 @@ nav {
     width: 100%;
   }
 
+  /* || WHAT SETS YOU ASIDE SECTION  */
+  #set-you-aside-section {
+    padding: 200px 30px 200px 30px;
+    text-align: center;
+  }
+
+  #set-you-aside-section h2 {
+    font-size: var(--header-text);
+    margin: var(--header-text-margin);
+  }
+
+  #set-you-aside-section div article {
+    background: var(--secondary-color);
+    padding: 30px;
+    border-radius: 15px;
+  }
+
+  #article-icon {
+    margin: var(--margin-between-paragraph);
+  }
+
+  #article-header {
+    margin: var(--margin-between-paragraph);
+  }
+
   /* ||thriving  */
   #thriving-community-section {
     background: var(--secondary-color);
-    padding: 70px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     text-align: center;
   }
 
+  #main-image {
+    margin-top: 30px;
+  }
+
   #community-section-container {
-    /* padding: 0px 100px 0px 100px; */
-    /* display: flex; */
-    justify-content: center;
-    flex-direction: column;
+    padding: 0px 5px 0px 5px;
   }
 
   #community-section-container h3 {
