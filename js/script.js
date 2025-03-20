@@ -1,26 +1,12 @@
 let hamburger_button = document.getElementById("hamburger-icon");
 let hamburger_menu = document.getElementById("hamburger-menu");
-hamburger_menu.style.display = "none";
-let isMenuOpen = false;
 
 hamburger_button.addEventListener("click", () => {
-  if (isMenuOpen) {
-    closeHamburgerMenu();
-  } else if (!isMenuOpen) {
-    openHamburgerMenu();
-  }
+  toggleHamburgerMenu();
 });
 
-// show hamburger menu
-function openHamburgerMenu() {
+// toggle hamburger menu
+function toggleHamburgerMenu() {
   console.log("opning...");
-  hamburger_menu.style.display = "";
-  isMenuOpen = true;
-}
-
-// hide hamburger menu
-function closeHamburgerMenu() {
-  console.log("closing...");
-  hamburger_menu.style.display = "none";
-  isMenuOpen = false;
+  hamburger_menu.classList.toggle("hamburger-open");
 }
