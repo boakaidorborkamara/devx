@@ -333,6 +333,54 @@ nav {
   background: white;
 }
 
+/* ||FOOTER  */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+  color: white;
+}
+
+#upper-footer {
+  padding: 100px 50px 100px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 300px;
+}
+
+#links {
+  display: flex;
+  gap: 100px;
+}
+
+/* #upper-footer div{
+  width
+} */
+
+#upper-footer li {
+  list-style-type: none;
+}
+
+#upper-footer ul {
+  padding-left: 0px;
+}
+
+/* LOWER FOOTER */
+#lower-footer {
+  border-top: 1px solid white;
+  width: 100%;
+  text-align: center;
+  padding: 50px 150px 50px 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#lower-footer .bi {
+  margin: 10px;
+}
+
 /* ||TABLETS to larger phone screen  */
 @media screen and (max-width: 768px) {
   /* ||Navigation  */
