@@ -537,6 +537,89 @@ footer {
     font-size: var(--header-text);
     margin: var(--header-text-margin);
   }
+
+  /* GROW WITH US  */
+  #grow-with-us {
+    padding: 0px 80px 60px 80px;
+  }
+
+  #grow-with-us > div {
+    background: var(--primary-color);
+    /* padding: 40px; */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  #grow-with-us img {
+    width: 100%;
+    /* padding: 10px 10px; */
+    margin-bottom: 15px;
+  }
+
+  /* MENTORS  */
+  #mentor-section > div {
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+    text-align: center;
+  }
+
+  /* UPPER FOOTER  */
+  #upper-footer {
+    padding: 100px 50px 100px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+  }
+
+  /* LOWER FOOTER  */
+  #lower-footer {
+    border-top: 1px solid white;
+    width: 100%;
+    text-align: center;
+    padding: 50px 50px 50px 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* FOOTER  */
+  #links {
+    display: flex;
+    /* gap: 100px; */
+  }
+
+  /* #upper-footer {
+    padding: 50px;
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+  } */
+
+  #upper-footer {
+    padding: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    justify-content: centr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #lower-footer {
+    border-top: 1px solid white;
+    /* width: 100%; */
+    text-align: center;
+    /* padding: 50px 50px 50px 50px; */
+    display: block;
+    justify-content: space-between;
+    padding: 50px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 424px) {
@@ -702,5 +785,40 @@ footer {
   #community-section-container h3 {
     font-size: var(--header-text);
     margin: var(--header-text-margin);
+  }
+
+  /* GROW WITH US  */
+  #grow-with-us {
+    padding: 0px 20px 60px 20px;
+  }
+
+  #grow-with-us > div:nth-child(1) {
+    padding: 100px 10px;
+    margin-top: 45px;
+  }
+
+  /* MENTORS  */
+  #mentor-section {
+    background: var(--secondary-color);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #mentor-section > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px;
+    text-align: center;
+  }
+
+  /* FOOTER  */
+  #links {
+    display: block;
+    /* gap: 100px; */
   }
 }
