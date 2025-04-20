@@ -29,6 +29,7 @@ p {
 
 a {
   text-decoration: none;
+  color: var(--primary-color);
 }
 
 button {
@@ -40,6 +41,13 @@ button {
 
 span {
   color: var(--accent-color);
+}
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0px;
 }
 
 button:hover {
@@ -67,12 +75,20 @@ nav {
   padding: 20px 80px 20px 80px;
   position: fixed;
   width: 100%;
+  z-index: 3;
 }
 
 #nav-menu {
   display: flex;
+  justify-content: center;
+  align-items: center;
   list-style-type: none;
   gap: 30px;
+}
+
+#nav-menu li a:hover {
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
 #hamburger-icon {
@@ -89,7 +105,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 150px 70px 150px 70px;
+  padding: 250px 70px 150px 70px;
 }
 
 #hero-section small {
@@ -101,7 +117,8 @@ nav {
 #hero-section h1 {
   font-size: var(--hero-text);
   font-weight: bolder;
-  margin: var(--header-text-margin);
+  /* margin: var(--header-text-margin); */
+  margin-top: 15px;
 }
 
 #hero-section button {
@@ -128,6 +145,7 @@ nav {
 #achevements-section h2 {
   font-size: var(--header-text);
   margin: var(--header-text-margin);
+  font-weight: bolder;
 }
 
 .achevements {
@@ -154,6 +172,12 @@ nav {
   border-bottom: 1px solid gray;
 }
 
+#our-story h2 {
+  font-size: var(--header-text);
+  font-weight: bolder;
+  margin: var(--header-text-margin);
+}
+
 #our-story div {
   padding: 0px 100px 0px 100px;
   display: flex;
@@ -162,7 +186,7 @@ nav {
 }
 
 #our-story div:nth-child(2) {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 #our-story div > p {
@@ -171,11 +195,6 @@ nav {
 
 #our-story img {
   border-radius: 15px;
-}
-
-#our-story h2 {
-  font-size: var(--header-text);
-  margin: var(--header-text-margin);
 }
 
 /* || WHAT SETS YOU ASIDE SECTION  */
@@ -187,6 +206,7 @@ nav {
 #set-you-aside-section h2 {
   font-size: var(--header-text);
   margin: var(--header-text-margin);
+  font-weight: bolder;
 }
 
 #set-you-aside-section div article {
@@ -201,12 +221,13 @@ nav {
 
 #article-header {
   margin: var(--margin-between-paragraph);
+  font-weight: bolder;
 }
 
 /* || THRIVING COMMUNITY SECTION  */
 #thriving-community-section {
   background: var(--secondary-color);
-  padding: 200px 300px 200px 300px;
+  padding: 200px 200px 200px 200px;
   display: flex;
 }
 
@@ -216,11 +237,17 @@ nav {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex-basis: 70%;
 }
 
 #community-section-container h3 {
   font-size: var(--header-text);
   margin: var(--header-text-margin);
+  font-weight: bolder;
+}
+
+#community-section-container li {
+  margin-bottom: 15px;
 }
 
 #community-section-image-container {
@@ -228,11 +255,12 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-basic: 30%;
 }
 
 #main-image {
   width: 100%;
-  height: 70%;
+  /* height: 70%; */
   border-radius: 15px;
   position: relative;
   z-index: 1;
@@ -304,8 +332,13 @@ nav {
   text-align: center;
 }
 
+#mentor-section h3 {
+  font-weight: bolder;
+}
+
 #mentor-section h6 {
   margin: 10px 0px 0px 0px;
+  font-weight: bolder;
 }
 
 #mentor-section small {
@@ -331,6 +364,10 @@ nav {
   border: 1px solid black;
   padding: 15px;
   background: white;
+}
+
+#mentor-section .mentor > small {
+  margin-bottom: 25px;
 }
 
 /* ||FOOTER  */
