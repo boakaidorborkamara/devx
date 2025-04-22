@@ -201,6 +201,7 @@ nav {
 #set-you-aside-section {
   padding: 200px 300px 200px 300px;
   text-align: center;
+  position: relative;
 }
 
 #set-you-aside-section h2 {
@@ -214,6 +215,32 @@ nav {
   padding: 30px;
   border-radius: 15px;
 }
+
+#left-slider-arrow {
+  position: absolute;
+  bottom: 310px;
+  left: 260px;
+  font-size: 3em;
+  color: white;
+  text-shadow: 0px 0px 4px gray;
+}
+
+#right-slider-arrow {
+  position: absolute;
+  bottom: 310px;
+  left: 1200px;
+  font-size: 3em;
+  color: white;
+  text-shadow: 0px 0px 4px gray;
+}
+
+#left-slider-arrow:hover {
+  cursor: pointer;
+}
+
+/* #article-container {
+  position: relative;
+} */
 
 #article-icon {
   margin: var(--margin-between-paragraph);
