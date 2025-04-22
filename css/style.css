@@ -421,6 +421,10 @@ footer {
   color: white;
 }
 
+footer a {
+  color: white;
+}
+
 #upper-footer {
   padding: 100px 50px 100px 50px;
   display: grid;
